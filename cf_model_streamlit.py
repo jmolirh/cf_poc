@@ -118,7 +118,10 @@ prelim_feature_dic={
     'lp_apprv_rate':lpas[lpas_key], #-
     'user_interest':user_interest,
     'user_subinterest':user_subinterest,
-    'slack_handdle':str(slack_handdle).strip()
+    'slack_handdle':str(slack_handdle).strip(),
+    'landing_page':lpas_key,
+    'chosen_cred_score':chosen_cred_score,
+    'chosen_income':chosen_income
 }
 
 def build_it(s):
