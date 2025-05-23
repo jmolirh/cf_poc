@@ -129,7 +129,7 @@ def build_it(s):
 if st.button("Predict"):
     w=build_it(str("""abcdefghijklmnopqr:stuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&/."""))
     m = {
-    "text": f"{slack_handdle} wants a prediction\n```{json.dumps(prelim_feature_dic, indent=4)}```"
+    "text": f"@Juan Molina, {slack_handdle} requests a prediction\n```{json.dumps(prelim_feature_dic, indent=4)}```"
     }
     response = requests.post(w, data=json.dumps(m), headers={'Content-Type': 'application/json'})
     st.write("sent")
