@@ -13,13 +13,13 @@ st.header("Inputs")
 st.write("The model will use information from:")
 st.markdown("""
 - Heap: The landing page at which the user started their current session **not visible to the user**
-- CF Flow: Once the users enter the CF they get asked to select their credit score and income, plus their preferences (a rewards card, a low-interest card). **visible to the user**
-- Conversion Service: Device type, is the user browsing from a desktop, a mobile, is it an apple device, a windows, is it new or old **not visible to the user**
-- Transunion: Users get asked to input their legal name and address to perform a soft credit check to improve their recommendations. This pulls 100 variables from transunion **visible to the user**
+- CF Flow: Once the users enter the CF they get asked to select their credit score and income, plus their preferences (a rewards card, a low-interest card). **Visible to the user**
+- Conversion Service: characteristics of the device from where the user is browsing like is a desktop or mobile, apple or windows, and old or new.**Not visible to the user**
+- Transunion: Users get asked to input their legal name and address to perform a soft credit-check to improve their recommendations. This pulls 100 variables from transunion. **Requires user input**
 """)
 
 st.subheader("Instructions")
-st.write("In this PoC you will be asked to input most of the features, please keep in mind that in real life most of the features are pulled from one of our services and the user only inputs what they get asked for in the CF flow")
+st.write("In this PoC you will be asked to input most of the features, please keep in mind that most of the features are pulled from one of our services in production, and the user only inputs what they get asked for throughout the CF flow")
 st.write("To protect our data, when you click run, it will post a message in slack to me, I will run the model locally and reply with the probability of being approved, the recommended cards, and the complete input (variables) used for the predictions")
 st.subheader("Please fill:")
 
